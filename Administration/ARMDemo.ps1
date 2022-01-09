@@ -1,4 +1,6 @@
 
+# Github.com/Azure/azure-quickstart-templates
+
 $GitBasePath = 'C:\Users\Kyle\OneDrive - Microsoft\Role\FY22 - ATT\AZ-104\Notes\AZ104-Notes\Administration'
 
 New-AzResourceGroup -Name "Kyle-RG-01" -Location "canadacentral"
