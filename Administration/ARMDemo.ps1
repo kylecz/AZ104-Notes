@@ -1,4 +1,3 @@
-#https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-template-deploy
 
 $GitBasePath = 'C:\Users\Kyle\OneDrive - Microsoft\Role\FY22 - ATT\AZ-104\Notes\AZ104-Notes\Administration'
 
