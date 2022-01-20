@@ -40,7 +40,7 @@ az login
 
 az account list
 
-az account set --s "subscription name"
+az account set --s "Microsoft"
 az account show
 
 az account list-locations
