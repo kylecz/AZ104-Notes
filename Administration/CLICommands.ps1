@@ -23,7 +23,7 @@ Get-Command -Module Az.Compute -Noun AzVM
 
 Get-AzResourceGroup
 Get-Command -Module Az.Resources -Noun AzResourceGroup
-New-AzResourceGroup -Name "TestRG01" -Location "southcentralus"
+New-AzResourceGroup -Name "az104classrg01" -Location "canadacentral"
 
 Get-AzVM
 Get-AzVM -status | ft name, powerstate -AutoSize

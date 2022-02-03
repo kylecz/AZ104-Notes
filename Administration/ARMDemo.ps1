@@ -3,12 +3,22 @@
 
 $GitBasePath = 'C:\Users\Kyle\OneDrive - Microsoft\Role\FY22 - ATT\AZ-104\Notes\AZ104-Notes\Administration'
 
-New-AzResourceGroup -Name "Kyle-RG-01" -Location "canadacentral"
+New-AzResourceGroup -Name "Kyle-RG-03" -Location "canadacentral"
 
-New-AzResourceGroupDeployment -ResourceGroupName Kyle-RG-01 `
+New-AzResourceGroupDeployment -ResourceGroupName Kyle-RG-03 `
     -TemplateFile "$GitBasePath\\StorageAccount.json" `
     -TemplateParameterFile "$GitBasePath\\StorageAccount.parameters.json"
 
+
+
+
+
+
+
+
+
+
+    
 #Run same template again but override the type of the storage account
 New-AzResourceGroupDeployment -ResourceGroupName Kyle-RG-01 `
 -TemplateFile "$GitBasePath\\StorageAccount.json" `
