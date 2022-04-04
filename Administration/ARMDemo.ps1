@@ -3,9 +3,9 @@
 
 $GitBasePath = 'C:\Users\Kyle\OneDrive - Microsoft\Role\FY22 - ATT\AZ-104\Notes\AZ104-Notes\Administration'
 
-New-AzResourceGroup -Name "Kyle-RG-03" -Location "canadacentral"
+New-AzResourceGroup -Name "Kyle-RG-04" -Location "canadacentral"
 
-New-AzResourceGroupDeployment -ResourceGroupName Kyle-RG-03 `
+New-AzResourceGroupDeployment -ResourceGroupName Kyle-RG-04 `
     -TemplateFile "$GitBasePath\\StorageAccount.json" `
     -TemplateParameterFile "$GitBasePath\\StorageAccount.parameters.json"
 
