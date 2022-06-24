@@ -1,5 +1,5 @@
 
-## Azure PowerShell
+## Azure PowerShell module
 
 #https://www.powershellgallery.com/packages/Az
 Get-InstalledModule -Name Az
@@ -21,9 +21,9 @@ Get-Command -Module Az.Compute
 Get-Command -Module Az.Compute -Verb New
 Get-Command -Module Az.Compute -Noun AzVM
 
-Get-AzResourceGroup
+Get-AzResourceGroup | ft
 Get-Command -Module Az.Resources -Noun AzResourceGroup
-New-AzResourceGroup -Name "az104classrg01" -Location "canadacentral"
+New-AzResourceGroup -Name "JoseRG" -Location "canadacentral"
 
 Get-AzVM
 Get-AzVM -status | ft name, powerstate -AutoSize
@@ -31,6 +31,11 @@ Get-AzVM -status | where {$_.powerstate -ne "VM Running"}
 
 New-AzVM -Name kylevm -Credential (Get-Credential) -Verbose -WhatIf
 New-AzVM -Name kylevm -Credential (Get-Credential) -Image UbuntuLTS -Verbose -WhatIf
+
+
+
+
+
 
 
 
